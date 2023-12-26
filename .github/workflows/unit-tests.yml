@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.28
+        uses: shivammathur/setup-php@2
         with:
           coverage: xdebug
           php-version: ${{ matrix.php }}
@@ -73,7 +73,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.28
+        uses: shivammathur/setup-php@2
         with:
           coverage: xdebug
           php-version: ${{ matrix.php }}
