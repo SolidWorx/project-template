@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2
+        uses: shivammathur/setup-php@v2
         with:
           coverage: "none"
           php-version: "${{ matrix.php-version }}"
