@@ -1,0 +1,110 @@
+name: Unit Tests
+
+on: [ pull_request ]
+
+jobs:
+  unit:
+    name: Unit ( PHP ${{ matrix.php }} )
+
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 5
+
+    strategy:
+      matrix:
+        php: [ '8.2', '8.3' ]
+      fail-fast: false
+
+    env:
+      APP_ENV: test
+      APP_DEBUG: 0
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@2.28
+        with:
+          coverage: xdebug
+          php-version: ${{ matrix.php }}
+          extensions: intl, ctype, iconv
+
+      - name: "Set up problem matchers for PHP"
+        run: "echo \"::add-matcher::${{ runner.tool_cache }}/php.json\""
+
+      - name: "Set up problem matchers for phpunit/phpunit"
+        run: "echo \"::add-matcher::${{ runner.tool_cache }}/phpunit.json\""
+
+      - uses: "ramsey/composer-install@v2"
+
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install
+      - run: bun run build
+
+      - name: Create Database
+        run: bin/console --env=test doctrine:database:create
+
+      - name: Create Schema
+        run: bin/console --env=test doctrine:schema:create
+
+      - name: Run test suite
+        run: vendor/bin/phpunit
+
+  coverage:
+    name: Code Coverage ( PHP ${{ matrix.php }} )
+
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 5
+
+    strategy:
+      matrix:
+        php:
+          - 8.2
+      fail-fast: false
+
+    env:
+      APP_ENV: test
+      APP_DEBUG: 0
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@2.28
+        with:
+          coverage: xdebug
+          php-version: ${{ matrix.php }}
+          extensions: intl, ctype, iconv
+
+      - name: "Set up problem matchers for PHP"
+        run: "echo \"::add-matcher::${{ runner.tool_cache }}/php.json\""
+
+      - name: "Set up problem matchers for phpunit/phpunit"
+        run: "echo \"::add-matcher::${{ runner.tool_cache }}/phpunit.json\""
+
+      - uses: "ramsey/composer-install@v2"
+
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install
+      - run: bun run build
+
+      - name: Create Database
+        run: bin/console --env=test doctrine:database:create
+
+      - name: Create Schema
+        run: bin/console --env=test doctrine:schema:create
+
+      - name: Run test suite
+        run: vendor/bin/phpunit --coverage-clover build/logs/clover.xml
+
+      - name: Upload coverage results to Coveralls
+        if: matrix.coverage
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          composer global require --prefer-dist --no-interaction --no-progress --ansi php-coveralls/php-coveralls
+          export PATH="$PATH:$HOME/.composer/vendor/bin"
+          php-coveralls --coverage_clover=build/logs/clover.xml -v

@@ -1,0 +1,17 @@
+parameters:
+    level: max
+    paths:
+        - bin/
+        - config/
+        - public/
+        - src/
+        - tests/
+
+    treatPhpDocTypesAsCertain: false
+
+    symfony:
+        container_xml_path: var/cache/dev/App_KernelDevDebugContainer.xml
+        consoleApplicationLoader: tests/console-application.php
+
+includes:
+    - phar://phpstan.phar/conf/bleedingEdge.neon
