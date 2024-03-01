@@ -36,7 +36,7 @@ jobs:
       - name: "Set up problem matchers for phpunit/phpunit"
         run: "echo \"::add-matcher::${{ runner.tool_cache }}/phpunit.json\""
 
-      - uses: "ramsey/composer-install@v2"
+      - uses: "ramsey/composer-install@v3"
 
       - uses: oven-sh/setup-bun@v1
       - run: bun install
@@ -85,7 +85,7 @@ jobs:
       - name: "Set up problem matchers for phpunit/phpunit"
         run: "echo \"::add-matcher::${{ runner.tool_cache }}/phpunit.json\""
 
-      - uses: "ramsey/composer-install@v2"
+      - uses: "ramsey/composer-install@v3"
 
       - uses: oven-sh/setup-bun@v1
       - run: bun install
