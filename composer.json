@@ -121,6 +121,6 @@
         "symfony/phpunit-bridge": "^7.1",
         "symfony/stopwatch": "^7.0",
         "symfony/web-profiler-bundle": "^7.1",
-        "symplify/easy-coding-standard": "^12.2"
+        "symplify/easy-coding-standard": "^12.3"
     }
 }
