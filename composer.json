@@ -101,7 +101,7 @@
         }
     },
     "require-dev": {
-        "dama/doctrine-test-bundle": "^8.1",
+        "dama/doctrine-test-bundle": "^8.2",
         "ergebnis/composer-normalize": "^2.42",
         "ergebnis/phpunit-slow-test-detector": "^2.14",
         "phpstan/extension-installer": "^1.3",
