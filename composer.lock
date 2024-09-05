@@ -8388,16 +8388,16 @@
         },
         {
             "name": "ergebnis/phpunit-slow-test-detector",
-            "version": "2.15.0",
+            "version": "2.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/phpunit-slow-test-detector.git",
-                "reference": "d9e4ea11d0e7bf1e54df5385bfd94b5156ab0a29"
+                "reference": "952f12e9941a4c9a698eea1d9f2faf5496d670a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/d9e4ea11d0e7bf1e54df5385bfd94b5156ab0a29",
-                "reference": "d9e4ea11d0e7bf1e54df5385bfd94b5156ab0a29",
+                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/952f12e9941a4c9a698eea1d9f2faf5496d670a9",
+                "reference": "952f12e9941a4c9a698eea1d9f2faf5496d670a9",
                 "shasum": ""
             },
             "require": {
@@ -8407,12 +8407,12 @@
             "require-dev": {
                 "ergebnis/composer-normalize": "^2.43.0",
                 "ergebnis/license": "^2.4.0",
-                "ergebnis/php-cs-fixer-config": "^6.31.0",
+                "ergebnis/php-cs-fixer-config": "^6.36.0",
                 "fakerphp/faker": "~1.20.0",
                 "psalm/plugin-phpunit": "~0.19.0",
                 "psr/container": "~1.0.0",
-                "rector/rector": "^1.1.0",
-                "vimeo/psalm": "^5.24.0"
+                "rector/rector": "^1.2.4",
+                "vimeo/psalm": "^5.25.0"
             },
             "type": "library",
             "extra": {
@@ -8451,7 +8451,7 @@
                 "security": "https://github.com/ergebnis/phpunit-slow-test-detector/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/phpunit-slow-test-detector"
             },
-            "time": "2024-06-16T18:21:35+00:00"
+            "time": "2024-09-05T08:34:57+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -9609,16 +9609,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "11.3.2",
+            "version": "11.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "8a4de85cc4a78c59dd31cc4ef454b0029f8440dc"
+                "reference": "8ed08766d9a2ed979a2f5fdbb95a0671523419c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/8a4de85cc4a78c59dd31cc4ef454b0029f8440dc",
-                "reference": "8a4de85cc4a78c59dd31cc4ef454b0029f8440dc",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/8ed08766d9a2ed979a2f5fdbb95a0671523419c1",
+                "reference": "8ed08766d9a2ed979a2f5fdbb95a0671523419c1",
                 "shasum": ""
             },
             "require": {
@@ -9689,7 +9689,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.3.2"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.3.3"
             },
             "funding": [
                 {
@@ -9705,7 +9705,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-09-03T12:00:26+00:00"
+            "time": "2024-09-04T13:34:52+00:00"
         },
         {
             "name": "rector/rector",
