@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6bd993e27bc6ff8bbf0731bc84a5cef6",
+    "content-hash": "9a94e8b1936970ee6cb2c3e0ada69070",
     "packages": [
         {
             "name": "api-platform/core",
@@ -8388,20 +8388,20 @@
         },
         {
             "name": "ergebnis/phpunit-slow-test-detector",
-            "version": "2.15.1",
+            "version": "2.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/phpunit-slow-test-detector.git",
-                "reference": "952f12e9941a4c9a698eea1d9f2faf5496d670a9"
+                "reference": "7397341732833be9a8afa1a96211e28120693bfc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/952f12e9941a4c9a698eea1d9f2faf5496d670a9",
-                "reference": "952f12e9941a4c9a698eea1d9f2faf5496d670a9",
+                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/7397341732833be9a8afa1a96211e28120693bfc",
+                "reference": "7397341732833be9a8afa1a96211e28120693bfc",
                 "shasum": ""
             },
             "require": {
-                "php": "~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0",
+                "php": "~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
                 "phpunit/phpunit": "^6.5.0 || ^7.5.0 || ^8.5.19 || ^9.0.0 || ^10.0.0 || ^11.0.0"
             },
             "require-dev": {
@@ -8411,8 +8411,8 @@
                 "fakerphp/faker": "~1.20.0",
                 "psalm/plugin-phpunit": "~0.19.0",
                 "psr/container": "~1.0.0",
-                "rector/rector": "^1.2.4",
-                "vimeo/psalm": "^5.25.0"
+                "rector/rector": "^1.2.5",
+                "vimeo/psalm": "^5.26.1"
             },
             "type": "library",
             "extra": {
@@ -8451,7 +8451,7 @@
                 "security": "https://github.com/ergebnis/phpunit-slow-test-detector/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/phpunit-slow-test-detector"
             },
-            "time": "2024-09-05T08:34:57+00:00"
+            "time": "2024-09-27T15:36:35+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -8712,16 +8712,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v5.2.0",
+            "version": "v5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "23c79fbbfb725fb92af9bcf41065c8e9a0d49ddb"
+                "reference": "3abf7425cd284141dc5d8d14a9ee444de3345d1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/23c79fbbfb725fb92af9bcf41065c8e9a0d49ddb",
-                "reference": "23c79fbbfb725fb92af9bcf41065c8e9a0d49ddb",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/3abf7425cd284141dc5d8d14a9ee444de3345d1a",
+                "reference": "3abf7425cd284141dc5d8d14a9ee444de3345d1a",
                 "shasum": ""
             },
             "require": {
@@ -8764,9 +8764,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.2.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.3.0"
             },
-            "time": "2024-09-15T16:40:33+00:00"
+            "time": "2024-09-29T13:56:26+00:00"
         },
         {
             "name": "phar-io/manifest",
