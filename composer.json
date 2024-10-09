@@ -112,7 +112,7 @@
         "phpstan/phpstan-phpunit": "^1.4",
         "phpstan/phpstan-strict-rules": "^1.6",
         "phpstan/phpstan-symfony": "^1.4",
-        "phpunit/phpunit": "^11.3",
+        "phpunit/phpunit": "^11.4",
         "rector/rector": "^1.2",
         "roave/security-advisories": "dev-latest",
         "symfony/browser-kit": "^7.1",
